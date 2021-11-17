@@ -1,3 +1,6 @@
+// JS/JQuery section that gives dynamism to icon click.
+// Each function hides all textual elements on the left side and displays the right message.
+// Also, each function appends a class to icon to give a new border color when focus.
 $("#neutral").prop("checked", true);
 $("#fimg").on("change", function(){
   $(stopInterval);
@@ -49,7 +52,8 @@ $("#sc-js2").click(function(){
   $(".coinch").removeClass("b-selec");
   $("#focicon5").addClass("b-selec");
 });
-$(window).resize(function(){
+// JS/JQuery function to change width resolution on window.chage event. This is event is trigger by default in browsers.
+function diffwidth(){
   if($(window).width() < 852){
     $(".content").fadeOut(500);
     $(".swiper-container").fadeIn(900);
@@ -66,7 +70,11 @@ $(window).resize(function(){
     $(".logo").fadeIn(300);
     $("#logo-f").fadeOut(300)
   }
+}
+$(window).resize(function(){
+  $(diffwidth);
 });
+// JS main variable of Swiper JS plugin of mobile view
 var swiper = new Swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   direction: 'vertical',
@@ -77,6 +85,7 @@ var swiper = new Swiper('.swiper-container', {
   parallax: true,
   speed: 600,
 });
+// JS/JQuery function to give autonomous rotation of textual elements if user does not give input
 var timer = null;
 function loopi(){
   var con = 1;
@@ -95,20 +104,30 @@ function loopi(){
   },4000);
 }
 $(loopi);
+// JS/JQuery function to stop autonomous rotation of textual elements
 function stopInterval(){
   clearInterval(timer);
-}
-/*function loopicon(){
-  var cons = 1;
-  timers = setInterval(function(){
-    var icnam = ("#focicon"+cons);
-    $(".coinch").removeClass("b-selec");
-    $(icnam).addClass("b-selec");
-    if(cons<=4){
-      cons += 1;
-    } else{
-      cons = 1;
-    }
-  },4300);
-}
-$(loopicon);*/
+} 
+// JS Code for registration message on desktop and mobile view
+$(window).on("load",function(){
+  if($("#activethanks").length){
+    $("#activethanks").click(function(){
+      if($(window).width() < 852){
+        $(".swiper-wrapper").append(
+          "<div class='swiper-slide'><div class='text'><p>Solicitud registrada<br>Pronto nos pondremos en contacto contigo</p></div></div>"
+        );
+        swiper.update();
+        swiper.slideTo(7,300,true);
+      }
+      if($(window).width() >= 852){
+        $(stopInterval);
+        $(".coinch").removeClass("b-selec");
+        $(".oc").fadeOut(800);
+        $("#desktext").append(
+          "<p id='oc'>Solicitud registrada<br>Pronto nos pondremos en contrato contigo</p>"
+        );
+      }
+    });
+    $("#activethanks").click();
+  };
+});

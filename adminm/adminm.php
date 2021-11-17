@@ -15,13 +15,14 @@
   <!-- CSS Files -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" />
   <link href="../css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <link href="../css/jquery.dataTables.min.css" rel="stylesheet" />
 </head>
 
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
-        <a href="javascript:;">
+        <a href="<?php $_SERVER['PHP_SELF']; ?>">
           <div class="logo-size-small">
             <img src="../images/logo-spidy.png">
           </div>
@@ -30,9 +31,9 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="javascript:;">
+            <a href="<?php $_SERVER['PHP_SELF']; ?>">
               <i class="fa fa-list"></i>
-              <p>Lista</p>
+              <p>Lista  </p>
             </a>
           </li>
         </ul>
@@ -50,7 +51,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Title</a>
+            <a class="navbar-brand" href="javascript:;">Registros</a>
           </div>
         </div>
       </nav>
@@ -60,11 +61,11 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"></h4>
+                <h4 class="card-title">Lista de registro</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table">
+                  <table class="table" id="tabletest">
                     <thead class="text-primary">
                       <th>Nombre</th>
                       <th>Correo electrónico</th>
@@ -72,7 +73,7 @@
                       <th>Aprobado</th>
                       <th>Editar</th>
                     </thead>
-                    <tbody></tbody>
+                    <tbody><?php include('../controller/dataview.php'); ?></tbody>
                   </table>
                 </div>
               </div>
@@ -86,5 +87,9 @@
   <script src="../js/jquery.min.js"></script>
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.dataTables.min.js"></script>
+  <script>
+    $("#tabletest").DataTable();
+  </script>
 </body>
 </html>

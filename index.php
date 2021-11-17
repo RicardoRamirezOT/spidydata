@@ -1,4 +1,7 @@
-<?php require_once('./controller/createreg.php'); ?>
+<?php
+  /* Call the PHP file with thr SQL query to insert data in database */
+  require_once('./controller/createreg.php'); 
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -19,7 +22,7 @@
       </div>
       <nav>
         <ul>
-          <li><a class="btn" id="sc-js" href="javascript:;">Contactanos</a></li>
+          <li><a class="btn" id="sc-js" href="<?php $_SERVER['PHP_SELF']; ?>">Contactanos</a></li>
         </ul>
       </nav>
     </header>
@@ -59,6 +62,7 @@
                   <h5 class="card-title">Formulario</h5>
               </div>
               <div class="card-body">
+                <!-- PHP action to call this actual file again -->
                 <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                   <div class="row">
                     <div class="col-md-12">
@@ -137,7 +141,7 @@
     </div>
     <!-- Main desktop view container -->
     <div class="content">
-      <div class="text">
+      <div id="desktext" class="text">
         <p class="oc" id="mit">Transforma el rumbo de tu negocio, tenemos las <span>soluciones tecnológicas correctas</span>, hechas a tu medida</p>
         <p class="v-hid oc rimg1" id="i-it">Conoce el comportamiento de tu negocio en todo momento, te ofrecemos el mejor servicio de estadísticas, facíl de manejar e interpretar</p>
         <p class="v-hid oc rimg2" id="ii-it">Comprende mejor lo que tus datos te quieren decir con nuestro servicio de análisis que integra todas las fuentes que necesites y dándoles un tratamiento adecuado</p>
@@ -148,12 +152,12 @@
               <h5 class="card-title">Formulario</h5>
           </div>
           <div class="card-body">
-            <form action="">
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Nombre*</label>
-                    <input type="text" class="form-control" placeholder="Nombre(s)">
+                    <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" required="required">
                   </div>
                 </div>
               </div>
@@ -161,7 +165,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Apellido paterno*</label>
-                    <input type="text" class="form-control" placeholder="Apellido paterno">
+                    <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" required="required">
                   </div>
                 </div>
               </div>
@@ -169,7 +173,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Apellido materno</label>
-                    <input type="text" class="form-control" placeholder="Apellido materno">
+                    <input name="spam" type="text" class="form-control" placeholder="Apellido materno">
                   </div>
                 </div>
               </div>
@@ -177,7 +181,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Correo electrónico*</label>
-                    <input type="text" class="form-control" placeholder="Correo">
+                    <input name="spmail" type="text" class="form-control" placeholder="Correo" required="required">
                   </div>
                 </div>
               </div>
@@ -185,14 +189,14 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Teléfono*</label>
-                    <input type="text" class="form-control" placeholder="Número">
+                    <input name="spnum" type="text" class="form-control" placeholder="Número" required="required">
                     <small>* Campos obligatorios</small>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="mx-auto">
-                  <button class="btn" type="submit">Enviar</button>
+                  <button class="btn" type="submit" name="spsend">Enviar</button>
                 </div>
               </div>
             </form>

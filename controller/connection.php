@@ -1,7 +1,8 @@
 <?php
-  $srvbd = "127.0.0.1";
-  $usrbd = "root";
-  $pswbd = "";
-  $dbnmbd = "spidybank";
-  $cnnbd = mysqli_connect($srvbd, $usrbd, $pswbd, $dbnmbd);
+  // Set main varibales of connection to the database
+  $srv = "127.0.0.1";
+  $usr = "root";
+  $psw = "";
+  $dbnm = "spidysql";
+  $cnnsp = mysqli_connect($srv, $usr, $psw, $dbnm);
 ?>
