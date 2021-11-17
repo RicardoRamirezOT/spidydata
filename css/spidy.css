@@ -351,7 +351,7 @@ input[type="radio"] {
   left: 0;
   width: 100%;
   line-height: 0;
-  height: 14%;
+  height: 15%;
   z-index: 0;
 }
 .wave:before {
@@ -442,6 +442,22 @@ input[type="radio"] {
   }
   .text {
     width: 100%;
+  }
+}
+@media screen and (max-height: 740px) {
+  .swiper-slide {
+    transform: scale(0.8);
+  }
+  nav ul li a.btn {
+    transform: scale(0.8);
+  }
+}
+@media screen and (min-height: 741px) {
+  .swiper-slide {
+    transform: scale(0.9);
+  }
+  nav ul li a.btn {
+    transform: scale(0.9);
   }
 }
 /* Mobile design styles, this refers to swiper plugin */

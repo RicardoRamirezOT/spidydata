@@ -1,9 +1,30 @@
+<!--
+
+ =========================================================
+ * Paper Dashboard 2 - v2.0.1
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+ * Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+-->
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="../images/logo.svg">
+  <link rel="icon" type="image/png" href="../images/logo-spidy.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Módulo admin
@@ -33,7 +54,7 @@
           <li class="active ">
             <a href="<?php $_SERVER['PHP_SELF']; ?>">
               <i class="fa fa-list"></i>
-              <p>Lista  </p>
+              <p class="navariaton">Solicitudes entrantes</p>
             </a>
           </li>
         </ul>
@@ -70,7 +91,7 @@
                       <th>Nombre</th>
                       <th>Correo electrónico</th>
                       <th>Teléfono</th>
-                      <th>Aprobado</th>
+                      <th>Aprobación</th>
                       <th>Editar</th>
                     </thead>
                     <tbody><?php include('../controller/dataview.php'); ?></tbody>

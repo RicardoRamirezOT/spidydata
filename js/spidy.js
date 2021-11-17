@@ -37,20 +37,21 @@ $("#fiimg").on("change", function(){
   $(".coinch").removeClass("b-selec");
   $("#focicon5").addClass("b-selec");
 });
+// JS/JQuery lines to help buttons to change the translate the content into the form.
 $("#sc-js").click(function(){
   $(".oc").fadeOut(800);
   $("#iv-it").delay(750).fadeIn(800);
   swiper.slideTo(4,300,true);
   $(stopInterval);
   $(".coinch").removeClass("b-selec");
-  $("#focicon5").addClass("b-selec");
+  $("#focicon4").addClass("b-selec");
 });
 $("#sc-js2").click(function(){
   $(".oc").fadeOut(800);
   $("#iv-it").delay(750).fadeIn(800);
   $(stopInterval);
   $(".coinch").removeClass("b-selec");
-  $("#focicon5").addClass("b-selec");
+  $("#focicon4").addClass("b-selec");
 });
 // JS/JQuery function to change width resolution on window.chage event. This is event is trigger by default in browsers.
 function diffwidth(){
@@ -92,7 +93,7 @@ function loopi(){
   timer = setInterval(function(){
     var nam = (".rimg"+con);
     $(".oc").fadeOut(800);
-    $(nam).delay(300).fadeIn(800);
+    $(nam).delay(750).fadeIn(800);
     var icnam = ("#focicon"+con);
     $(".coinch").removeClass("b-selec");
     $(icnam).addClass("b-selec");

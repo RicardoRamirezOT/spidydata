@@ -1445,11 +1445,11 @@ p.description {
 
 .text-primary,
 a.text-primary:focus, a.text-primary:hover {
-  color: #51cbce !important; }
+  color: #BFBF00 !important; }
 
 .text-info,
 a.text-info:focus, a.text-info:hover {
-  color: #51bcda !important; }
+  color: #81898b !important; }
 
 .text-success,
 a.text-success:focus, a.text-success:hover {
@@ -4219,6 +4219,7 @@ License - nucleoapp.com/license/
   max-width: 100px;
 }
 .logout {
+  background-color: #FE9C5B!important;
   width: 65px;
   height: 65px;
   font-size: 2em !important;
@@ -4227,4 +4228,7 @@ License - nucleoapp.com/license/
   position: absolute;
   bottom: 0;
   right: 1em;
+}
+.navariaton {
+  color: black;
 }
