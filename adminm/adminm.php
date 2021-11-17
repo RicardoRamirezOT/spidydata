@@ -81,6 +81,7 @@
           </div>
         </div>
       </div>
+      <button class="btn btn-primary btn-round logout"><i class="fa fa-power-off fa-2"></i></button>
     </div>
   </div>
   <!--   Core JS Files   -->

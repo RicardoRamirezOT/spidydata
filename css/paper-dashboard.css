@@ -4218,3 +4218,13 @@ License - nucleoapp.com/license/
 .logo-size-small {
   max-width: 100px;
 }
+.logout {
+  width: 65px;
+  height: 65px;
+  font-size: 2em !important;
+  border-radius: 50%!important;
+  padding: .375rem .75rem!important;
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+}
