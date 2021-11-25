@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/logo-spidy.png">
-    <title>Landing Page Ex</title>
+    <title>Spidy Bank Data</title>
     <!-- CSS files calls -->
     <link rel="stylesheet" href="./css/spidy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
@@ -22,7 +22,7 @@
       </div>
       <nav>
         <ul>
-          <li><a class="btn" id="sc-js" href="<?php $_SERVER['PHP_SELF']; ?>">Contactanos</a></li>
+          <li><a class="btn" id="sc-js" href="javascript:;">Contactanos</a></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +68,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Nombre*</label>
-                        <input name="spname" type="text" class="form-control" placeholder="Nombre(s)">
+                        <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" value="">
                       </div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Apellido paterno*</label>
-                        <input name="spap" type="text" class="form-control" placeholder="Apellido paterno">
+                        <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" value="">
                       </div>
                     </div>
                   </div>
@@ -84,7 +84,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Apellido materno</label>
-                        <input name="spam" type="text" class="form-control" placeholder="Apellido materno">
+                        <input name="spam" type="text" class="form-control" placeholder="Apellido materno" value="">
                       </div>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Correo electrónico*</label>
-                        <input name="spmail" type="text" class="form-control" placeholder="Correo">
+                        <input name="spmail" type="text" class="form-control" placeholder="Correo" value="">
                       </div>
                     </div>
                   </div>
@@ -100,7 +100,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Teléfono*</label>
-                        <input name="spnum" type="text" class="form-control" placeholder="Número">
+                        <input name="spnum" type="text" class="form-control" placeholder="Número" value="">
                         <small>* Campos obligatorios</small>
                       </div>
                     </div>
@@ -157,7 +157,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Nombre*</label>
-                    <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" required="required">
+                    <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" required="required" value="">
                   </div>
                 </div>
               </div>
@@ -165,7 +165,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Apellido paterno*</label>
-                    <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" required="required">
+                    <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" required="required" value="">
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Apellido materno</label>
-                    <input name="spam" type="text" class="form-control" placeholder="Apellido materno">
+                    <input name="spam" type="text" class="form-control" placeholder="Apellido materno" value="">
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Correo electrónico*</label>
-                    <input name="spmail" type="text" class="form-control" placeholder="Correo" required="required">
+                    <input name="spmail" type="text" class="form-control" placeholder="Correo" required="required" value="">
                   </div>
                 </div>
               </div>
@@ -189,7 +189,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Teléfono*</label>
-                    <input name="spnum" type="text" class="form-control" placeholder="Número" required="required">
+                    <input name="spnum" type="text" class="form-control" placeholder="Número" required="required" value="">
                     <small>* Campos obligatorios</small>
                   </div>
                 </div>
@@ -229,9 +229,7 @@
       </div>
     </div>
     <!-- Wave animation call -->
-    <div class="wave">
-      <img src="" alt="">
-    </div>
+    <div class="wave"></div>
     <!-- JS files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>

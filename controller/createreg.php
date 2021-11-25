@@ -16,9 +16,12 @@
     $sql = "INSERT INTO registro_land(nombre, ap_paterno, ap_materno, correo, telefono, aprobacion) VALUES ('$name', '$app', '$apm', '$email', '$tel', 0)";
     if(mysqli_query($cnnsp, $sql)){
       echo "<button id='activethanks' class='v-hid'></button>";
+      $name = $app = $apm = $tel = $email = "";
+      mysqli_close($cnnsp);
     } else{
       echo "Error:" . $sql . "<br>" . mysqli_error($cnnsp);
+      $name = $app = $apm = $tel = $email = "";
+      mysqli_close($cnnsp);
     } 
   }
-  mysqli_close($cnnsp);
 ?>

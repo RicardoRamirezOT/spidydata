@@ -1,6 +1,11 @@
 // JS/JQuery section that gives dynamism to icon click.
 // Each function hides all textual elements on the left side and displays the right message.
 // Also, each function appends a class to icon to give a new border color when focus.
+
+/* Disable send form a second time on refresh website */
+if (window.history.replaceState) {
+  window.history.replaceState(null, null, window.location.href);
+}
 $("#neutral").prop("checked", true);
 $("#fimg").on("change", function(){
   $(stopInterval);
@@ -125,10 +130,10 @@ $(window).on("load",function(){
         $(".coinch").removeClass("b-selec");
         $(".oc").fadeOut(800);
         $("#desktext").append(
-          "<p id='oc'>Solicitud registrada<br>Pronto nos pondremos en contrato contigo</p>"
+          "<p class='oc'>Solicitud registrada<br>Pronto nos pondremos en contrato contigo</p>"
         );
       }
     });
     $("#activethanks").click();
   };
-});
+})
