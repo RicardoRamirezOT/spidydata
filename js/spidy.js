@@ -107,7 +107,7 @@ function loopi(){
     } else{
       con = 1;
     }
-  },4000);
+  },8000);
 }
 $(loopi);
 // JS/JQuery function to stop autonomous rotation of textual elements
