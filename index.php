@@ -68,7 +68,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Nombre*</label>
-                        <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" value="">
+                        <input name="spname" type="text" class="form-control" placeholder="Nombre(s)" value="" required="required">
                       </div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Apellido paterno*</label>
-                        <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" value="">
+                        <input name="spap" type="text" class="form-control" placeholder="Apellido paterno" value="" required="required">
                       </div>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Correo electrónico*</label>
-                        <input name="spmail" type="text" class="form-control" placeholder="Correo" value="">
+                        <input name="spmail" type="text" class="form-control" placeholder="Correo (ej. paco@gmail.com)" value="" required="required">
                       </div>
                     </div>
                   </div>
@@ -100,7 +100,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Teléfono*</label>
-                        <input name="spnum" type="text" class="form-control" placeholder="Número" value="">
+                        <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern=".{9,10}">
                         <small>* Campos obligatorios</small>
                       </div>
                     </div>
@@ -181,7 +181,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Correo electrónico*</label>
-                    <input name="spmail" type="text" class="form-control" placeholder="Correo" required="required" value="">
+                    <input name="spmail" type="email" class="form-control" placeholder="Correo (ej. paco@gmail.com)" required="required" value="">
                   </div>
                 </div>
               </div>
@@ -189,7 +189,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Teléfono*</label>
-                    <input name="spnum" type="text" class="form-control" placeholder="Número" required="required" value="">
+                    <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern=".{9,10}">
                     <small>* Campos obligatorios</small>
                   </div>
                 </div>
