@@ -100,7 +100,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Teléfono*</label>
-                        <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern=".{9,10}">
+                        <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern="[0-9]{10}">
                         <small>* Campos obligatorios</small>
                       </div>
                     </div>
@@ -189,7 +189,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Teléfono*</label>
-                    <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern=".{9,10}">
+                    <input name="spnum" type="text" class="form-control" placeholder="Número a 10 digitos" required="required" value="" pattern="[0-9]{10}">
                     <small>* Campos obligatorios</small>
                   </div>
                 </div>
