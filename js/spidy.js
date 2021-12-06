@@ -120,7 +120,7 @@ $(window).on("load",function(){
     $("#activethanks").click(function(){
       if($(window).width() < 852){
         $(".swiper-wrapper").append(
-          "<div class='swiper-slide'><div class='text'><p>Solicitud registrada<br>Pronto nos pondremos en contacto contigo</p></div></div>"
+          "<div class='swiper-slide'><div class='text'><p>Solicitud registrada,<br>pronto nos pondremos en contacto contigo.</p></div></div>"
         );
         swiper.update();
         swiper.slideTo(7,300,true);
@@ -130,7 +130,7 @@ $(window).on("load",function(){
         $(".coinch").removeClass("b-selec");
         $(".oc").fadeOut(800);
         $("#desktext").append(
-          "<p class='oc'>Solicitud registrada<br>Pronto nos pondremos en contrato contigo</p>"
+          "<p class='oc'>Solicitud registrada,<br>pronto nos pondremos en contacto contigo.</p>"
         );
       }
     });

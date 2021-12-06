@@ -92,7 +92,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Correo electrónico*</label>
-                        <input name="spmail" type="text" class="form-control" placeholder="Correo (ej. paco@gmail.com)" value="" required="required">
+                        <input name="spmail" type="email" class="form-control" placeholder="Correo (ej. paco@gmail.com)" value="" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$">
                       </div>
                     </div>
                   </div>
@@ -181,7 +181,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Correo electrónico*</label>
-                    <input name="spmail" type="email" class="form-control" placeholder="Correo (ej. paco@gmail.com)" required="required" value="">
+                    <input name="spmail" type="email" class="form-control" placeholder="Correo (ej. paco@gmail.com)" required="required" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$">
                   </div>
                 </div>
               </div>
