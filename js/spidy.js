@@ -58,6 +58,11 @@ $("#sc-js2").click(function(){
   $(".coinch").removeClass("b-selec");
   $("#focicon4").addClass("b-selec");
 });
+$("#txsel").click(function(){
+  $(stopInterval);
+  $(".coinch").removeClass("b-selec");
+  $("#focicon4").addClass("b-selec");
+});
 // JS/JQuery function to change width resolution on window.chage event. This is event is trigger by default in browsers.
 function diffwidth(){
   if($(window).width() < 852){
